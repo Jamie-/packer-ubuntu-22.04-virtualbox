@@ -1,0 +1,10 @@
+instance-id: jammy
+local-hostname: jammy
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    switchports:
+      match:
+        name: "*"
+      dhcp4: yes

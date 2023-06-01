@@ -1,0 +1,12 @@
+#cloud-config
+users:
+  - name: user
+    lock_passwd: false
+    # passwd: password
+    passwd: "$6$yiungaix7uKui3ei$iT/32tttuNiaCoV02I4LgdM7Qi46rVhKYvDSdzv5YgDdN74mKsu9HTySXheKmUBoKlJ3VvQQP49GictwN0pfK0"
+    sudo: [ "ALL=(ALL) NOPASSWD:ALL" ]
+    shell: /bin/bash
+    # ssh_authorized_keys:
+    #   - <ssh public key>
+
+ssh_pwauth: true
