@@ -13,4 +13,4 @@ if [ ! -f "./jammy-fixed.ova" ]; then
   vboxmanage unregistervm ubuntu-jammy --delete
 fi
 
-packer build ubuntu.pkr.hcl
+packer build -var ova_source_path="./jammy-fixed.ova" ubuntu.pkr.hcl

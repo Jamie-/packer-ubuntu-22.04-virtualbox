@@ -21,6 +21,7 @@ variable "ova_source_path" {
   default = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.ova"
 }
 
+# Checksum disabled while we are modifying the Jammy OVA
 # variable "ova_source_checksum" {
 #   type = string
 #   default = "sha256:80decd92b39aad995bb1a7a01ae64680514f33d5ef4e117c5193f0eab376294c"
